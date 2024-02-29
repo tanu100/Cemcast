@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width:thin;
+    scroll-behavior: smooth;
+    scrollbar-color:  rgba(156, 156, 160, 0.304);
+}
+
+/* Font style */
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+
+  .bg-nav{
+    background-color:transparent;
+  }
+.dropdown:hover > .dropdown-menu{
+    display: block;
+    margin-top:0;  /*to make the dropdown stable so that there is no movement of dropdown of 1 px */  
+}
+
+.navcolor{
+    background-color: rgba(0.15,0.15,0.15,0.15);
+}
+
+  
+
+.card-img-top{
+    border-radius: 50%;
+    height:180px;
+    width:180px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit:cover;
+    top:-70px;
+    cursor:pointer;
+}
+.card{
+    border-radius: 0;
+    cursor:pointer;
+    margin-top: 100px;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+footer {
+    background-color: #f8f9fa; 
+    color: #333; 
+    text-align: center;
+    padding: 20px 0;
+}
+.map-container {
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto;
+}
+p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+
+#india{
+    color: orangered;
+   font-size: 1.8rem;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  #choose{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  #para{
+    font-size: larger;
+  }
+  #about {
+    padding: 50px 0;
+    background-color: #062c62;
+    color: white;
+    height: 25rem;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid orangered;
+    color: orangered;
+    border-radius: 0;
+}
+
+.btn-primary:hover {
+    background-color: orangered;
+    border-color: orangered;
+    color: white;
+}
+.about-section{
+    margin-top: 3%;
+}
+#aboutus{
+    padding: 50px 0;
+    background-color: #062c62;
+    color: white;
+    height: 25rem;
+}
+
+/* Landing Page */
+
+.landing-page {
+    position: relative;
+    z-index: -1;
+    height: 88vh;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    
+} 
+
+.rectangle {
+    margin-top:10vh;
+    width: 50%; /* Adjusted to a percentage for responsiveness */
+    max-width: 50rem; /* Maximum width */
+    height:50%; /* Allow height to adjust according to content */
+    border-radius: 2rem;  
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: -1;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+
+.rectangle p{
+    font-size :2.6rem;;
+    font-weight:700;
+    padding-top: 8%;
+    color: #062c62;
+}
+
+
+.landing-page img {
+    width: 50%;
+    position: absolute;
+    top:-10%; /* Adjusted to position it at the top */
+    left: 50%;
+    transform: translate(-50%, -50%); /* To center horizontally and vertically */
+}
+
+/*heading*/
+#main-heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-top: -7%;
+    font-style: italic;
+}
+
+#map{
+    width:30rem;
+    height:13rem;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 950px) {
+    
+    #india{
+        font-size: 1.5rem;
+    }
+    .landing-page img {
+        width: 100%;
+    }
+    .rectangle p{
+        font-size :2rem;;
+        font-weight:600;
+       
+    }
+    #main-heading{
+        font-size: 1.5rem;
+    }
+    .rectangle {
+        width: 90%; 
+    }
+    #choose{
+        font-size: 1.9rem;
+    }
+    #para{
+        font-size: 1rem;
+    }
+    #map{
+        width:auto;
+        height:auto;
+    }
+    
+    
+}
+/*serivices*/
+.service-item {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.service-item:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.service-item img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+.service-item h3 {
+    margin-top: 0;
+}
+/* photo gallery */
+.photo-gallery{
+    background-color: #062c62;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.photo-gallery h1{
+    color: orangered;
+}
+
+.photo-gallery p{
+    color: #f8f9fa;
+}
+
+#pos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 750px) and (max-width: 1290px) {
+    
+    #india{
+        font-size: 1.5rem;
+    }
+    .landing-page img {
+        width: 100%;
+        margin-top: -3.9%;
+    }
+    .rectangle p{
+        font-size :2.7rem;;
+        font-weight:700;
+        margin-top: 6%;
+       
+    }
+    #main-heading{
+        font-size: 2rem;
+    }
+    .rectangle {
+        width: 90%; 
+        height: 46%;
+    }
+    #choose{
+        font-size: 2.5rem;
+    }
+    #para{
+        font-size: 1rem;
+    }
+    
+    
+}
